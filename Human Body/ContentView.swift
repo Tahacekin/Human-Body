@@ -68,6 +68,8 @@ struct PlacementButtonView: View {
                 print("DEBUG: Model placement confirmed")
             
                 self.modelConfirmedForPlacement = self.selectedModel
+                
+                self.resetPlacementParametres()
             }, label: {
                 Image(systemName: "checkmark")
                     .frame(width: 60,height: 60)
